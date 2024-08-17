@@ -1,12 +1,6 @@
 import { Table, TableColumnsType, TableProps } from "antd";
 import { useGetAllSemestersQuery } from "../../../redux/features/admin/academicManagement.api";
 
-interface DataType {
-  key: React.Key;
-  name: string;
-  age: number;
-  address: string;
-}
 
 const AcademicSemester = () => {
   const { data: semesterData } = useGetAllSemestersQuery(undefined);
@@ -71,7 +65,7 @@ const AcademicSemester = () => {
     sorter,
     extra
   ) => {
-    console.log("params", pagination, filters, sorter, extra);
+    console.log(filters)
   };
 
   return (
