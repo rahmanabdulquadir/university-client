@@ -3,6 +3,7 @@ import { TQueryParam } from "../../../types";
 import { Button, Pagination, Space, Table, TableColumnsType, TableProps } from "antd";
 import { Link } from "react-router-dom";
 import { TStudent } from "../../../types/userManagement.type";
+import { useGetAllStudentsQuery } from "../../../redux/features/admin/userManagement.api";
 
 export type TTableData = Pick<
   TStudent,

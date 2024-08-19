@@ -8,6 +8,7 @@ import AdminDashboard from "../pages/Admin/AdminDashboard";
 import CreateAdmin from "../pages/Admin/userManagement/CreateAdmin";
 import CreateFaculty from "../pages/Admin/userManagement/CreateFaculty";
 import CreateStudent from "../pages/Admin/userManagement/CreateStudent";
+import StudentData from "../pages/Admin/userManagement/StudentData";
 
 export const adminPaths = [
   {
